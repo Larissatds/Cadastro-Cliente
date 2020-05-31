@@ -1,0 +1,156 @@
+body{
+    background-image: url(img/img5.png);
+    background-attachment: fixed;
+    background-size: 75%;
+}
+#textPrin{
+    margin-top: 230px;
+    color: rgb(185, 143, 51);
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 5px 3px 3px black;
+    font-style: bold;
+    font-family: sans-serif;
+}
+#divCadastro{
+    margin-top: 50px;
+    color: darkgray;
+}   
+#divPrin1{
+    width: 400px;
+    border-radius: 10px;
+    background-color: #1C1C1C;
+    box-shadow: 10px 5px 5px black;
+}
+#separaDiv{
+    max-width: 1px; 
+}
+#divPrin2{
+    background-color: black;
+    width: 400px;
+    border-radius: 10px;
+}
+#buttonCad{
+    margin-left: 430px;
+    margin-bottom: 20px;
+    min-width: 200px;
+    border-color: #1C1C1C;
+    color:rgb(185, 143, 51);
+    background-color: #1C1C1C;   
+}
+
+#nome{
+    margin-top: 10px;
+    background-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-color: rgb(185, 143, 51);
+    box-shadow:  0px 0px 0px ;
+}
+#email{
+    background-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-color: rgb(185, 143, 51);
+    box-shadow:  0px 0px 0px ;
+}
+#tel{
+    background-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-color: rgb(185, 143, 51);
+    box-shadow:  0px 0px 0px ;
+}
+#cel{
+    background-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-color: rgb(185, 143, 51);
+    box-shadow:  0px 0px 0px ;
+}
+#cep{
+    background-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-color: rgb(185, 143, 51);
+    box-shadow:  0px 0px 0px ;
+}
+#rua{
+    background-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-color: rgb(185, 143, 51);
+    box-shadow:  0px 0px 0px ;
+}
+#num{
+    background-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-color: rgb(185, 143, 51);
+    box-shadow:  0px 0px 0px ;
+}
+#bairro{
+    background-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-color: rgb(185, 143, 51);
+    box-shadow:  0px 0px 0px ;
+}
+
+#cidade{
+    background-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-color: rgb(185, 143, 51);
+    box-shadow:  0px 0px 0px ;
+}
+#uf{
+    background-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-color: rgb(185, 143, 51);
+    box-shadow:  0px 0px 0px ;
+}
+#divExibir{
+    font: 14px Arial;
+    margin-top: 50px;
+    background-color: black;
+    border-radius: 10px;
+    color: rgb(185, 143, 51);
+}
+#buttonDel{
+    min-width: 50px;
+    border-color: #1C1C1C;
+    color: rgb(185, 143, 51);
+    background-color: #1C1C1C;
+}
+table tr td{
+    width: 115px;
+}
+/*Muda cor do placeholder*/
+.c-form-contato input::-webkit-input-placeholder { /*WebKit browsers */
+    color: rgb(185, 143, 51)!important;
+    opacity: 1;
+  }
+ .c-form-contato input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: rgb(185, 143, 51) !important;
+   opacity: 1;
+ }
+ .c-form-contato input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: rgb(185, 143, 51)!important;
+   opacity: 1;
+ }
+ .c-form-contato input:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: rgb(185, 143, 51) !important;
+   opacity: 1;
+ }

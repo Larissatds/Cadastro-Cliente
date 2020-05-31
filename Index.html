@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+
+    <script type="text/javascript" src="js/Script.js"></script>
+    <script type="text/javascript" src="bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+   
+    <div class="container" id="divCadastro">
+        <div class="row">
+            <div class="col-sm-4 col-xs-12" id="divPrin1">
+                <h2 id="textPrin">Cadastro do Cliente</h2>
+            </div>
+            <div class="col-sm-1 col-xs-12" id="separaDiv"></div>
+            <div class="col-sm-7 col-xs-12 c-form-contato"id="divPrin2">
+                <form name="CadastroCli" id="CadastroCli" >
+                
+                    <!--Nome-->
+                    <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome Completo" size="60">
+                    <br /> <br />
+
+                    <!--E-mail-->
+                    <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" size="60">
+                    <br /> <br />
+
+                    <!--Telefones-->
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-3">
+                            <input type="text" name="tel" id="tel" class="form-control" placeholder="Telefone" size="16" maxlength="10">
+                            <br /> <br /> </div>
+                            <div class="col-sm-4 col-xs-4">
+                            <input type="text" name="cel" id="cel" class="form-control" placeholder="Celular" size="17" maxlength="11">
+                            <br /> <br /></div>
+                        </div>
+
+                    <!--CEP-->
+                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                        onblur="pesquisacep(this.value);" class="form-control" placeholder="CEP">
+                    <br /> <br />
+
+                    <!--Logradouro-->
+                    <input name="rua" type="text" id="rua" class="form-control" placeholder="Rua" size="60"> 
+                    <br /> <br />
+
+                    <!--Número-->
+                    <input name="num" type="text" id="num" class="form-control" placeholder="Nº" size="6">
+                    <br /> <br />
+
+                    <!--Bairro-->
+                    <input name="bairro" type="text" id="bairro"  class="form-control" placeholder="Bairro" size="40">
+                    <br /> <br />
+
+                    <!--Cidade-->
+                    <div class="row">
+                        <div class="col-sm-5 col-xs-5" id="divCid">
+                            <input name="cidade" type="text" id="cidade"  class="form-control" placeholder="Cidade" size="40">
+                            <br /> <br /> 
+                        </div>
+
+                        <!--Estado-->
+                        <div  class="col-sm-2 col-xs-2" id="divUF">
+                            <input name="uf" type="text" id="uf"  class="form-control" placeholder="UF" size="2">
+                            <br /> <br />
+                        </div>
+                    </div>
+                
+                    <!--Botão Cadastrar-->
+                    <input type="button" id="buttonCad" value="Cadastrar" class="btn btn-dark" onclick="cadastroCliente(nome.value, email.value, tel.value, cel.value, cep.value, rua.value, num.value, bairro.value, cidade.value, uf.value)">
+            </div>
+        </div>
+    </div>
+
+    <!--Listagem dos Dados-->
+    <div class="container" id="divExibir">
+        <div class="col-sm-12 col-xs-12">
+            <table id="tExibir">
+                <thead>
+                    <tr>
+                        <div class="col-sm-2 col-xs-2"><td>Nome</td></div>
+                        <div class="col-sm-1 col-xs-1"><td>E-mail</td></div>
+                        <div class="col-sm-1 col-xs-1"><td>Telefone</td></div>
+                        <div class="col-sm-1 col-xs-1"><td>Celular</td></div>
+                        <div class="col-sm-1 col-xs-1"><td>CEP</td></div>
+                        <div class="col-sm-1 col-xs-1"><td>Logradouro</td></div>
+                        <div class="col-sm-1 col-xs-1"><td>Nº</td></div>
+                        <div class="col-sm-1 col-xs-1"><td>Bairro</td></div>
+                        <div class="col-sm-1 col-xs-1"><td>Cidade</td></div>
+                        <div class="col-sm-1 col-xs-1"><td>Estado</td></div>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    </form>
+    
+</body>
+</html>
